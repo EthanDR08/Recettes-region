@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Découverte de spécialités régionales à travers leur histoire, leur description et des vidéos.">
+  <title>Les saveurs du Sud de la France</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="logo">🍴 Saveurs régionales</div>
+      <a href="#specialites">Les spécialités</a>
+    </nav>
+    <div class="hero-content">
+      <p class="eyebrow">Présentation gastronomique</p>
+      <h1>Les saveurs du Sud de la France</h1>
+      <p>Découvrez six spécialités et produits régionaux du Sud de la France à travers leur histoire, leur présentation et une vidéo.</p>
+      <a class="button" href="#specialites">Découvrir</a>
+    </div>
+    <span class="ornament ornament-1">✦</span>
+    <span class="ornament ornament-2">✧</span>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p class="eyebrow">Gastronomie & patrimoine</p>
+      <h2>Des spécialités qui racontent leur territoire</h2>
+      <p>
+        Cette sélection présente des plats et produits emblématiques de différentes régions du Sud de la France, notamment d’Occitanie.
+        Cliquez sur une carte pour découvrir une courte présentation et regarder une vidéo.
+      </p>
+    </section>
+
+    <section id="specialites" class="recipes-section">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">Au menu</p>
+          <h2>Les spécialités locales</h2>
+        </div>
+        <span id="recipe-count"></span>
+      </div>
+      <div id="recipe-grid" class="recipe-grid"></div>
+    </section>
+  </main>
+
+  <div class="modal" id="recipe-modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="close-button" id="close-modal" aria-label="Fermer">×</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Présentation des spécialités régionales • Projet scolaire</p>
+    <p class="footer-note">Vidéos : YouTube • Les liens ouvrent les contenus sur leur plateforme d'origine.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
